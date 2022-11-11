@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="./boxicons.min copy.css">
+        <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+        <title></title>
+    </head>
+    <body>
+    
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav-logo-icon">
+                    <title>Academlo Logo</title>
+                    <g>
+                        <g>
+                            <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"> </path>
+                        </g>
+                    </g>
+                </svg>
+                STORE
+                </a>
+
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#products" class="nav-link">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <div class="nav-btns">
+                    <i class="bx bx-moon change-theme" id="theme-button"></i>
+                
+                    <div class="nav-shop" id="cart-shop">
+                        <i class="bx bx-shopping-bag"></i>
+                        <span id="cart-count" class="count">0</span>
+                    </div>
+                
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="cart" id="cart">
+            <i class="bx bx-x cart-close" id="cart-close"></i>
+        
+            <h2 class="cart-title-center">My Cart</h2>
+        
+            <div class="cart-container">
+                <div class="cart-empty">
+                    <img src="img/empty-cart.png" alt="empty cart">
+                    <h2>Your cart is empty</h2>
+                    <p>You can add items to your cart by clicking on the "<i class="bx bx-plus"></i>" button on the product page.</p>
+                </div>
+            </div>
+        
+            <div class="cart-prices">
+                <span class="cart-prices-item"><span id="items-count">0</span> items</span>
+                <span class="cart-prices-total" id="cart-total">$0.00</span>
+            </div>
+        
+            <div class="cart-checkout">
+                <button class="button cart-btn" id="cart-checkout" >
+                    <i class="bx bxs-check-shield"></i> 
+                    Checkout
+                </button>
+            </div>
+        
+        </div>
+
+        <main class="main">
+
+            <section class="home" id="home">
+                <div class="home-container container grid">
+                    <div class="home-img-bg">
+                        <img src="img/featured1.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home-data">
+                        <h1 class="home-title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+                        <p class="home-description">
+                            Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+                            design.
+                        </p>
+                        <span class="home-price">$14.00</span>
+
+                        <div class="home-btns">
+                            <a href="#" class="button button--gray button--small">
+                            Discover
+                            </a>
+
+                            <button class="button home-button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products" id="products">
+                <div class="products-container container">
+                    <ul class="products-filters">
+                        <li class="products-item products__line active-product mixitup-control-active" data-filter="all">
+                            <h3 class="products-title" data-filter="all">
+                                Show All
+                            </h3>
+                            <span class="products-stock" data-filter="all">
+                                show all products
+                            </span>
+                        </li>
+                    
+                        <li class="products-item products-line" data-filter=".hoodies">
+                            <h3 class="products-title" data-filter=".hoodies">
+                                Hoodies
+                            </h3>
+                            <span class="products-stock" data-filter=".hoodies">
+                                10 products
+                            </span>
+                        </li>
+                    
+                        <li class="products-item products-line" data-filter=".shirts">
+                            <h3 class="products-title" data-filter=".shirts">
+                                Shirts
+                            </h3>
+                            <span class="products-stock" data-filter=".shirts">
+                                15 products
+                            </span>
+                        </li>
+                    
+                        <li class="products-item" data-filter=".sweatshirts">
+                            <h3 class="products-title" data-filter=".sweatshirts">
+                                Sweatshirts
+                            </h3>
+                            <span class="products-stock" data-filter=".sweatshirts">
+                                20 products
+                            </span>
+                        </li>
+                    </ul>
+                
+                    <div class="products-content grid" id="products-content"></div>
+            </section>
+        
+        </main>
+
+        <footer class="footer section">
+            <div class="footer-container container grid">
+                <div class="footer-content">
+                    <h3 class="footer-title">Our information</h3>
+                    <ul class="footer-list">
+                        <li>Perú</li>
+                    </ul>
+                </div>
+
+                <div class="foote-content">
+                    <h3 class="foote-title">About Us</h3>
+
+                    <ul class="foote-links">
+                        <li>
+                            <a href="#" class="footer-link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="footer-content">
+                    <h3 class="footer-title">Product</h3>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link">Hoodies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Sweatshirts</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="footer-content">
+                    <h3 class="footer-title">Social</h3>
+
+                    <ul class="footer-social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer-social-link">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer-social-link">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        
+
+        </footer>
+
+      
+
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
